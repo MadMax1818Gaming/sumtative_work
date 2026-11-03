@@ -1,0 +1,36 @@
+body {
+    background-color: lightblue;
+    font-family: Arial;
+    margin: 30px;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+h2 {
+    color: darkred;
+}
+
+p {
+    font-size: 16px;
+}
+
+img {
+    width: 400px;
+}
+
+.petite-image {
+    width: 200px;
+}
+
+input {
+    padding: 5px;
+}
+
+button {
+    background-color: darkblue;
+    color: white;
+    padding: 8px;
+}
