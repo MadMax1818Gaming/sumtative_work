@@ -1,20 +1,33 @@
+
 // Message dans la console
-console.log("Bienvenue sur mon site !");
+console.log("Bienvenue sur mon site");
 
-// Petit calcul avec des variables
-let nombreDeJeux = 5;
-let prix = 20;
-let total = nombreDeJeux * prix;
+// Vérification de l'âge
+function verifier() {
 
-console.log("Le prix total est de " + total + " dollars.");
+    let naissance = document.getElementById("naissance").value;
+    let annee = 2026;
 
-// Le formulaire affiche une réponse
-document.getElementById("formulaire").onsubmit = function(event) {
-    event.preventDefault();
+    if (naissance == "" || isNaN(naissance) || naissance < 1900 || naissance > annee) {
+        document.getElementById("message").innerHTML = "Entre une année valide";
+    }
+    else {
+        let age = annee - naissance;
 
-    let nom = document.getElementById("nom").value;
-    let jeu = document.getElementById("jeu").value;
+        // Calcul dans la console
+        console.log("Année : " + naissance);
+        console.log("Calcul : " + annee + " - " + naissance);
+        console.log("Âge : " + age);
 
-    document.getElementById("message").innerHTML =
-        "Merci " + nom + "! Ton jeu préféré est " + jeu + ".";
-};
+        if (age > 12) {
+            document.getElementById("verification").style.display = "none";
+            document.getElementById("site").style.display = "block";
+
+            console.log("Accès accepté !");
+        }
+        else {
+            document.getElementById("message").innerHTML = "Tu dois avoir plus de 12 ans";
+            console.log("Accès refusé");
+        }
+    }
+}
