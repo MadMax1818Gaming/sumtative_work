@@ -1,9 +1,9 @@
 
 body {
-    background-color: rgb(139, 101, 245);
+    background-color: rgb(247, 243, 234);
     font-family: Arial;
     margin: 30px;
-    text-align: center;
+    text-align: left;
 }
 
 h1 {
@@ -53,8 +53,8 @@ form {
 }
 
 .form {
-    background-color: rgb(255, 137, 137);
-    border: 3px solid rgb(183, 44, 123);
+    background-color: rgb(148, 141, 156);
+    border: 3px solid rgb(34, 25, 164);
     border-radius: 15px;
     padding: 20px;
     margin: 25px auto;
