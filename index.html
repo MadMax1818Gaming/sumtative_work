@@ -5,30 +5,36 @@
     <title>Mes jeux vidéo préférés</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+    <!-- Vérification de l'âge -->
     <div id="verification">
         <h1>Vérification de l'âge</h1>
+
         <p>Quelle est ton année de naissance ?</p>
 
-        <input type="text" id="naissance" placeholder="example-> 2010">
+        <input type="text" id="naissance" placeholder="Ex: 2010">
+
         <button onclick="verifier()">Continuer</button>
 
         <p id="message"></p>
     </div>
 
+    <!-- Contenu du site -->
     <div id="site" style="display:none;">
 
         <h1>Mes jeux vidéo préférés</h1>
 
-        <h2>Pourquoi j'aime les jeux vidéo</h2>
-        <p>J'aime les jeux vidéo parce qu'ils sont amusants. On peut explorer,
-        construire des choses et jouer avec ses amis.</p>
+        <p>
+            J'aime jouer aux jeux vidéo pendant mon temps libre.
+            Il existe plusieurs sortes de jeux.
+        </p>
 
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrWc03fBNA4kxUv9nlVmNdaa67qy2-f1zVhPMswTXZWw&s=10"
-             alt="setup">
+        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600" alt="Joueur de jeux vidéo">
 
         <h2>Mes types de jeux préférés</h2>
+
         <ul>
             <li>Jeux de construction</li>
             <li>Jeux d'aventure</li>
@@ -36,21 +42,45 @@
         </ul>
 
         <h2>Minecraft</h2>
-        <p>Minecraft est un jeu où on peut construire des maisons, explorer
-        des grottes et fabriquer des objets.</p>
-
-        <img class="petite-image"
-             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7jPugZn83QtQ3T7nwVgJCNg6DgJIw0h7u13jVMsKgvQ&s=10"
-             alt="poster minecraft">
 
         <p>
-            <a href="https://www.minecraft.net/fr-fr" target="_blank">
-                Site officiel de Minecraft
-            </a>
+            Minecraft est un jeu où on peut construire des maisons,
+            explorer le monde et jouer avec ses amis.
         </p>
+
+        <img class="petite-image" src="https://images.unsplash.com/photo-1607513746994-51f730a44832?w=500" alt="Jeu de construction">
+
+        <p>
+            Visite le site officiel :
+            <a href="https://www.minecraft.net/fr-fr" target="_blank">Minecraft</a>
+        </p>
+
+        <!-- Formulaire -->
+        <h2>Ton jeu préféré</h2>
+
+        <p>Remplis le formulaire ci-dessous !</p>
+
+        <div class="form">
+          <form id="formulaire">
+
+              <p>Ton adresse email :</p>
+              <input type="email" id="email" placeholder="exemple@email.com" required>
+
+              <p>Ton jeu vidéo préféré :</p>
+              <input type="text" id="jeu" placeholder="Minecraft" required>
+
+              <br><br>
+
+              <button type="submit">Envoyer</button>
+
+          </form>
+        </div>
+
+        <p id="confirmation"></p>
 
     </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>
