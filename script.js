@@ -1,3 +1,6 @@
+//Maxime Carrière
+//site web évaluation
+//2026-11-04
 
 // Message dans la console
 console.log("Bienvenue sur mon site !");
@@ -6,7 +9,7 @@ console.log("Bienvenue sur mon site !");
 function verifier() {
 
     let naissance = document.getElementById("naissance").value;
-    let annee = new Date().getFullYear();
+    let annee = new Date().getFullYear(); //vas rester a date
 
     if (naissance == "" || isNaN(naissance) || naissance < 1900 || naissance > annee) {
 
