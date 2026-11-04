@@ -1,27 +1,31 @@
-
 body {
-    background-color: rgb(247, 243, 234);
+    background-color: #0b0e14;
+    color: #e2e8f0;
     font-family: Arial;
     margin: 30px;
     text-align: left;
 }
 
 h1 {
-    color: darkblue;
+    color: #00f0ff;
     text-align: center;
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
 }
 
 h2 {
-    color: darkred;
+    color: #ff007f;
+    text-shadow: 0 0 8px rgba(255, 0, 127, 0.4);
 }
 
 p {
     font-size: 16px;
+    color: #cbd5e1;
 }
 
 img {
     width: 400px;
     max-width: 90%;
+    border-radius: 8px;
 }
 
 .petite-image {
@@ -29,15 +33,33 @@ img {
 }
 
 input {
+    background-color: #1a1f2c;
+    color: white;
+    border: 1px solid #334155;
+    border-radius: 4px;
     padding: 10px;
     margin: 5px;
 }
 
+input:focus {
+    border-color: #00f0ff;
+    outline: none;
+}
+
 button {
-    background-color: darkblue;
+    background-color: #7000ff;
     color: white;
-    padding: 8px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
     cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #ff007f;
+    transform: scale(1.05);
 }
 
 form {
@@ -46,30 +68,27 @@ form {
 }
 
 #verification {
-    background-color: rgb(148, 141, 156);
-    border: 3px solid rgb(34, 25, 164);
+    background-color: #111622;
+    border: 2px solid #7000ff;
     border-radius: 20px;
-
     padding: 35px;
     width: 350px;
     max-width: 80%;
-
     margin: 150px auto;
-
     text-align: center;
-
-    box-shadow: 5px 5px 15px gray;
+    box-shadow: 0 10px 30px rgba(112, 0, 255, 0.25);
 }
 
 #message {
-    color: red;
+    color: #ff3333;
 }
 
 .form {
-    background-color: rgb(148, 141, 156);
-    border: 3px solid rgb(34, 25, 164);
+    background-color: #111622;
+    border: 2px solid #00f0ff;
     border-radius: 15px;
     padding: 20px;
     margin: 25px auto;
     max-width: 800px;
+    box-shadow: 0 10px 25px rgba(0, 240, 255, 0.15);
 }
