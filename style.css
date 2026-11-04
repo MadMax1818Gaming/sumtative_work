@@ -1,3 +1,4 @@
+
 body {
     background-color: rgb(139, 101, 245);
     font-family: Arial;
@@ -7,7 +8,6 @@ body {
 
 h1 {
     color: darkblue;
-    text-align: center;
 }
 
 h2 {
@@ -20,6 +20,7 @@ p {
 
 img {
     width: 400px;
+    max-width: 90%;
 }
 
 .petite-image {
@@ -27,20 +28,35 @@ img {
 }
 
 input {
-    padding: 5px;
+    padding: 10px;
+    margin: 5px;
 }
 
 button {
     background-color: darkblue;
     color: white;
     padding: 8px;
+    cursor: pointer;
+}
+
+form {
+    text-align: center;
+    margin: 20px;
 }
 
 #verification {
-    text-align: center;
     margin-top: 100px;
 }
 
 #message {
     color: red;
+}
+
+.form {
+    background-color: rgb(255, 137, 137);
+    border: 3px solid rgb(183, 44, 123);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 25px auto;
+    max-width: 800px;
 }
