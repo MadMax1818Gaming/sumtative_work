@@ -50,7 +50,9 @@ document.getElementById("formulaire").onsubmit = function(event) {
 
     let email = document.getElementById("email").value;
     let jeu = document.getElementById("jeu").value;
+    let plateforme = document.getElementById("plateforme").value;
 
+    console.log("Plateforme : " + plateforme);
     console.log("Nouvelle réponse !");
     console.log("Email : " + email);
     console.log("Jeu préféré : " + jeu);
