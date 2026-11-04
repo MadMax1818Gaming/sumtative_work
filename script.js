@@ -13,7 +13,8 @@ function verifier() {
 
     if (naissance == "" || isNaN(naissance) || naissance < 1900 || naissance > annee) {
 
-        document.getElementById("message").innerHTML = "Entre une année valide !";
+        document.getElementById("message").textContent =
+    "Entre une année valide !";
 
     }
     else {
