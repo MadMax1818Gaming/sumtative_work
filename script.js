@@ -8,7 +8,7 @@ console.log("Bienvenue sur mon site !");
 // Vérification de l'âge
 function verifier() {
 
-    let naissance = document.getElementById("naissance").value;
+    let naissance = Number(document.getElementById("naissance").value);
     let annee = new Date().getFullYear(); //vas rester a date
 
     if (naissance == "" || isNaN(naissance) || naissance < 1900 || naissance > annee) {
