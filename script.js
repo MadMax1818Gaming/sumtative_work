@@ -6,7 +6,7 @@ console.log("Bienvenue sur mon site !");
 function verifier() {
 
     let naissance = document.getElementById("naissance").value;
-    let annee = 2026;
+    let annee = new Date().getFullYear();
 
     if (naissance == "" || isNaN(naissance) || naissance < 1900 || naissance > annee) {
 
