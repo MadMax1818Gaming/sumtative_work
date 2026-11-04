@@ -98,3 +98,17 @@ form {
 .form > p {
     text-align: center;
 }
+
+select {
+    background-color: #1a1f2c;
+    color: white;
+    border: 1px solid #334155;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 5px;
+}
+
+select:focus {
+    border-color: #00f0ff;
+    outline: none;
+}
