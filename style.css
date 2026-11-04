@@ -46,8 +46,19 @@ form {
 }
 
 #verification {
-    margin-top: 100px;
+    background-color: rgb(148, 141, 156);
+    border: 3px solid rgb(34, 25, 164);
+    border-radius: 20px;
+
+    padding: 35px;
+    width: 350px;
+    max-width: 80%;
+
+    margin: 150px auto;
+
     text-align: center;
+
+    box-shadow: 5px 5px 15px gray;
 }
 
 #message {
