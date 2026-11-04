@@ -92,3 +92,8 @@ form {
     max-width: 800px;
     box-shadow: 0 10px 25px rgba(0, 240, 255, 0.15);
 }
+
+.form h2,
+.form > p {
+    text-align: center;
+}
