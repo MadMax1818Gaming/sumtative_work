@@ -72,27 +72,42 @@
             <a href="https://www.minecraft.net/fr-fr" target="_blank">Minecraft</a>
         </p>
 
-        <!-- Formulaire -->
-        <div class="form">
-          <h2>Ton jeu préféré</h2>
 
-          <p>Remplis le formulaire ci-dessous !</p>
+<!-- Formulaire -->
+<div class="form">
+    <h2>Ton jeu préféré</h2>
 
-        
-          <form id="formulaire">
+    <p>Remplis le formulaire ci-dessous !</p>
 
-              <p>Ton adresse email :</p>
-              <input type="email" id="email" placeholder="exemple@email.com" required>
+    <form id="formulaire">
 
-              <p>Ton jeu vidéo préféré :</p>
-              <input type="text" id="jeu" placeholder="Minecraft" required>
+        <p>Ton adresse email :</p>
+        <input type="email" id="email"
+            placeholder="exemple@email.com" required>
 
-              <br><br>
+        <p>Ton jeu vidéo préféré :</p>
+        <input type="text" id="jeu"
+            placeholder="Minecraft" required>
 
-              <button type="submit">Envoyer</button>
+        <p>Quelle est ta plateforme préférée ?</p>
 
-          </form>
-        </div>
+        <select id="plateforme" required>
+            <option value="" disabled selected>
+                Choisis une plateforme
+            </option>
+            <option value="PC">PC</option>
+            <option value="PlayStation">PlayStation</option>
+            <option value="Xbox">Xbox</option>
+            <option value="Nintendo">Nintendo</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Envoyer</button>
+
+    </form>
+</div>
+
 
         <p id="confirmation"></p>
 
