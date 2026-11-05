@@ -71,8 +71,20 @@ img {
     margin-right: auto;
 }
 
+.minecraft-info {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.minecraft-info p {
+    flex: 1;
+}
+
 .image-minecraft {
-    width: 400px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
 }
 
 /* 5. INPUTS AND SELECT */
