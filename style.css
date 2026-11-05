@@ -163,3 +163,12 @@ form {
 #message {
     color: #ff3333;
 }
+
+/* 9. TABS */
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px auto;
+}
