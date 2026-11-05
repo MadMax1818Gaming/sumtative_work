@@ -1,4 +1,11 @@
+html, body {
+    margin: 0;
+    min-height: 100%;
+}
+
 body {
+    position: relative;
+    min-height: 100vh;
     background: linear-gradient(
         -45deg,
         #090979,
@@ -8,23 +15,60 @@ body {
     );
 
     background-size: 400% 400%;
-    animation: gradient 12s ease infinite;
+    animation: gradient 15s ease infinite;
 
     color: white;
     font-family: Arial;
+    overflow-x: hidden;
 }
 
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
     }
-
     50% {
         background-position: 100% 50%;
     }
-
     100% {
         background-position: 0% 50%;
+    }
+}
+
+/* Animated glowing waves */
+body::before {
+    content: "";
+    position: fixed;
+    inset: -50%;
+
+    background:
+        radial-gradient(ellipse at 20% 30%,
+            rgba(0, 240, 255, 0.35), transparent 40%),
+
+        radial-gradient(ellipse at 80% 20%,
+            rgba(255, 0, 127, 0.35), transparent 40%),
+
+        radial-gradient(ellipse at 50% 80%,
+            rgba(112, 0, 255, 0.4), transparent 45%);
+
+    filter: blur(55px);
+
+    animation: waves 18s ease-in-out infinite alternate;
+
+    z-index: -1;
+    pointer-events: none;
+}
+
+@keyframes waves {
+    0% {
+        transform: translate(-5%, -5%) rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: translate(5%, 3%) rotate(15deg) scale(1.2);
+    }
+
+    100% {
+        transform: translate(-3%, 8%) rotate(-15deg) scale(1.1);
     }
 }
 
