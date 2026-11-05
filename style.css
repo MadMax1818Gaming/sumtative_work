@@ -1,9 +1,31 @@
 body {
-    background-color: #0b0e14;
-    color: #e2e8f0;
+    background: linear-gradient(
+        -45deg,
+        #090979,
+        #6a00a8,
+        #e0008a,
+        #0077ff
+    );
+
+    background-size: 400% 400%;
+    animation: gradient 12s ease infinite;
+
+    color: white;
     font-family: Arial;
-    margin: 30px;
-    text-align: left;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 h1 {
