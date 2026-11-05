@@ -3,6 +3,9 @@ body {
     background: linear-gradient(120deg, #000000, #071638, #000000);
     background-size: 200% 200%;
     animation: waves 7s ease infinite;
+
+    color: white;
+    font-family: Arial, sans-serif;
 }
 
 @keyframes waves {
