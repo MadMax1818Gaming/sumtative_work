@@ -6,7 +6,7 @@ body {
     min-height: 100vh;
     background: linear-gradient(120deg, #000000, #071638, #000000);
     background-size: 200% 200%;
-    animation: waves 12s ease infinite;
+    animation: waves 24s ease infinite;
 
     color: white;
     font-family: Arial, sans-serif;
