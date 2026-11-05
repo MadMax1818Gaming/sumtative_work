@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -11,11 +12,11 @@
     <!-- Vérification de l'âge -->
     <div id="verification">
 
-      <h1>Vérification de l'âge</h1>
+        <h1>Vérification de l'âge</h1>
 
-      <p>Bienvenue sur mon site de jeux vidéo !</p>
+        <p>Bienvenue sur mon site de jeux vidéo !</p>
 
-      <label for="naissance">Quelle est ton année de naissance ?</label>
+        <label for="naissance">Quelle est ton année de naissance ?</label>
 
         <input
             type="text"
@@ -26,11 +27,11 @@
             required
         >
 
-      <br><br>
+        <br><br>
 
-      <button onclick="verifier()">Continuer</button>
+        <button onclick="verifier()">Continuer</button>
 
-      <p id="message"></p>
+        <p id="message"></p>
 
     </div>
 
@@ -39,13 +40,15 @@
 
         <h1>Mes jeux vidéo préférés</h1>
 
-        <img class="main-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrWc03fBNA4kxUv9nlVmNdaa67qy2-f1zVhPMswTXZWw&s=10" alt="Joueur de jeux vidéo">
+        <img class="main-image"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrWc03fBNA4kxUv9nlVmNdaa67qy2-f1zVhPMswTXZWw&s=10"
+        alt="Joueur de jeux vidéo">
 
         <p>
-            Pendant mon temps libre, j'adore jouer aux jeux vidéo, que ce soit pour me 
+            Pendant mon temps libre, j'adore jouer aux jeux vidéo, que ce soit pour me
             détendre en solo ou pour partager des moments de complicité avec mes amies.
         </p>
-        
+
         <h2>Mes types de jeux préférés</h2>
 
         <ul>
@@ -55,57 +58,149 @@
             <li>Jeux compétitifs</li>
         </ul>
 
-        <h2>Minecraft</h2>
+        <!-- BOUTONS DES TABS -->
+        <div class="tabs">
 
-        <p>
-            Minecraft est le parfait exemple de cette diversité, permettant de 
-            bâtir des maisons géantes, de s'aventurer à travers des mondes infinis 
-            et surtout de jouer avec mes amies.
-        </p>
+            <button onclick="showTab('tab1')">Minecraft</button>
 
-        <img class="petite-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSHHpqJX93kHp8f5pnOprOPb0huJ8lreW6KkOCi5ikUg&s=10" alt="Jeu de construction">
+            <button onclick="showTab('tab2')">Fortnite</button>
 
-        <p>
-            Visite le site officiel :
-            <a href="https://www.minecraft.net/fr-fr" target="_blank">Minecraft</a>
-        </p>
+            <button onclick="showTab('tab3')">Roblox</button>
+
+            <button onclick="showTab('tab4')">SnowRunner</button>
+
+        </div>
+
+        <!-- MINECRAFT -->
+        <div id="tab1" class="tab-content">
+
+            <h2>Minecraft</h2>
+
+            <p>
+                Minecraft est le parfait exemple de cette diversité, permettant de
+                bâtir des maisons géantes, de s'aventurer à travers des mondes infinis
+                et surtout de jouer avec mes amies.
+            </p>
+
+            <img class="petite-image"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSHHpqJX93kHp8f5pnOprOPb0huJ8lreW6KkOCi5ikUg&s=10"
+            alt="Jeu de construction">
+
+            <p>
+                Visite le site officiel :
+                <a href="https://www.minecraft.net/fr-fr" target="_blank">Minecraft</a>
+            </p>
+
+        </div>
+
+        <!-- FORTNITE -->
+        <div id="tab2" class="tab-content" style="display:none;">
+
+            <h2>Fortnite</h2>
+
+            <p>
+                Fortnite est un jeu compétitif dans lequel les joueurs doivent
+                trouver des objets, construire ou se cacher et essayer d'être
+                le dernier survivant.
+            </p>
+
+            <img class="petite-image"
+            src="https://cdn2.unrealengine.com/fortnite-og-social-1920x1080-1920x1080-3e4e5f8b3a8b.jpg"
+            alt="Fortnite">
+
+            <p>
+                Visite le site officiel :
+                <a href="https://www.fortnite.com/" target="_blank">Fortnite</a>
+            </p>
+
+        </div>
+
+        <!-- ROBLOX -->
+        <div id="tab3" class="tab-content" style="display:none;">
+
+            <h2>Roblox</h2>
+
+            <p>
+                Roblox est une plateforme qui permet de jouer à des milliers
+                de jeux différents créés par d'autres personnes. On peut
+                explorer, construire et jouer avec ses amis.
+            </p>
+
+            <img class="petite-image"
+            src="https://images.rbxcdn.com/7e6e6a0f0e9e7e0e0f9e0e0e0e0e0e0e"
+            alt="Roblox">
+
+            <p>
+                Visite le site officiel :
+                <a href="https://www.roblox.com/" target="_blank">Roblox</a>
+            </p>
+
+        </div>
+
+        <!-- SNOWRUNNER -->
+        <div id="tab4" class="tab-content" style="display:none;">
+
+            <h2>SnowRunner</h2>
+
+            <p>
+                SnowRunner est un jeu de conduite tout-terrain dans lequel
+                on doit conduire des camions et des véhicules dans des
+                environnements difficiles comme la boue, la neige et les montagnes.
+            </p>
+
+            <img class="petite-image"
+            src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1465360/header.jpg"
+            alt="SnowRunner">
+
+            <p>
+                Visite le site officiel :
+                <a href="https://www.focus-entmt.com/en/games/snowrunner" target="_blank">SnowRunner</a>
+            </p>
+
+        </div>
 
 
-<!-- Formulaire -->
-<div class="form">
-    <h2>Ton jeu préféré</h2>
+        <!-- FORMULAIRE -->
+        <div class="form">
 
-    <p>Remplis le formulaire ci-dessous !</p>
+            <h2>Ton jeu préféré</h2>
 
-    <form id="formulaire">
+            <p>Remplis le formulaire ci-dessous !</p>
 
-        <p>Ton adresse email :</p>
-        <input type="email" id="email"
-            placeholder="exemple@email.com" required>
+            <form id="formulaire">
 
-        <p>Ton jeu vidéo préféré :</p>
-        <input type="text" id="jeu"
-            placeholder="Minecraft" required>
+                <p>Ton adresse email :</p>
 
-        <p>Quelle est ta plateforme préférée ?</p>
+                <input type="email" id="email"
+                placeholder="exemple@email.com" required>
 
-        <select id="plateforme" required>
-            <option value="" disabled selected>
-                Choisis une plateforme
-            </option>
-            <option value="PC">PC</option>
-            <option value="PlayStation">PlayStation</option>
-            <option value="Xbox">Xbox</option>
-            <option value="Nintendo">Nintendo</option>
-        </select>
+                <p>Ton jeu vidéo préféré :</p>
 
-        <br><br>
+                <input type="text" id="jeu"
+                placeholder="Minecraft" required>
 
-        <button type="submit">Envoyer</button>
+                <p>Quelle est ta plateforme préférée ?</p>
 
-    </form>
-</div>
+                <select id="plateforme" required>
 
+                    <option value="" disabled selected>
+                        Choisis une plateforme
+                    </option>
+
+                    <option value="PC">PC</option>
+                    <option value="PlayStation">PlayStation</option>
+                    <option value="Xbox">Xbox</option>
+                    <option value="Nintendo">Nintendo</option>
+
+                </select>
+
+                <br><br>
+
+                <button type="submit">Envoyer</button>
+
+            </form>
+
+        </div>
 
         <p id="confirmation"></p>
 
