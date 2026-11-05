@@ -71,17 +71,26 @@ img {
     margin-right: 0;
 }
 
-.minecraft-info {
+.minecraft-info,
+.fortnite-info,
+.roblox-info,
+.snowrunner-info {
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-.minecraft-info p {
+.minecraft-info p,
+.fortnite-info p,
+.roblox-info p,
+.snowrunner-info p {
     flex: 1;
 }
 
-.image-minecraft {
+.image-minecraft,
+.fortnite-image,
+.roblox-image,
+.snowrunner-image {
     width: 250px;
     display: block;
     margin-left: auto;
