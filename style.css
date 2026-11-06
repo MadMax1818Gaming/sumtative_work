@@ -91,11 +91,16 @@ img {
     flex: 1;
 }
 
-.image-minecraft,
+.image-minecraft {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+}
+
 .fortnite-image,
 .roblox-image,
 .snowrunner-image {
-    width: 250px;
+    width: 500px;
     display: block;
     margin-left: auto;
 }
