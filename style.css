@@ -64,7 +64,7 @@ ul {
 /* 4. IMAGES */
 
 img {
-    width: 400px;
+    height: auto;
     max-width: 90%;
     border-radius: 8px;
 }
