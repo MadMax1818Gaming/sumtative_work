@@ -193,3 +193,37 @@ form {
     gap: 15px;
     margin: 20px auto;
 }
+
+/* 10. PARAGRAF IN TAB THING */
+
+
+.minecraft-info,
+.fortnite-info,
+.roblox-info,
+.snowrunner-info {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.minecraft-text,
+.fortnite-text,
+.roblox-text,
+.snowrunner-text {
+    flex: 1;
+}
+
+.minecraft-text p,
+.fortnite-text p,
+.roblox-text p,
+.snowrunner-text p {
+    max-width: 500px;
+}
+
+.image-minecraft,
+.image-fortnite,
+.image-roblox,
+.image-snowrunner {
+    width: 250px;
+    display: block;
+}
